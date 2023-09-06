@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #191919;
+}
+.galary{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+}
+.galary div{
+    width: 100%;
+    display: grid;
+    grid-template-columns : auto auto auto;
+    gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.galary div img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: ease-out 0.5s;
+}
+.galary::-webkit-scrollbar{
+    display: none; 
+}
+.gal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
+}
+#backbtn,#nextbtn{
+    width: 50px;
+    cursor: pointer;
+    margin: 10px;
+}
+.galary div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
